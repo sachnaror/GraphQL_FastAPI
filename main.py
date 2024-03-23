@@ -1,16 +1,15 @@
 from database import get_db  # Absolute import
 from fastapi import FastAPI
-from schema import (create_todo, delete_todo, query,  # Absolute import
-                    update_todo)
 from starlette.middleware.cors import CORSMiddleware
 from strawberry.asgi import GraphQL
+from schema import (create_todo, delete_todo, query, update_todo)
 
 # Create FastAPI app
 app = FastAPI()
 
 # CORS middleware
 app.add_middleware(
-    CORSMiddleware=["*"],
+    CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
