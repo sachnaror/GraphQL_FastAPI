@@ -1,8 +1,12 @@
+from models import Base  # Absolute import
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-from .models import Base
+from .models import Base  # Relative import
+
+# Rest of your code
+
 DATABASE_URI = "sqlite:///./todos.db"
 
 engine = create_engine(DATABASE_URI)
