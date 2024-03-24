@@ -1,36 +1,73 @@
-# Project Name
+## GraphQL FastAPI Example
 
-A brief description of your project.
+This repository contains a simple example of integrating GraphQL with FastAPI, a modern, fast (high-performance) web framework for building APIs with Python. The project demonstrates how to set up a GraphQL server using FastAPI and interact with it using GraphQL queries.
 
-## Table of Contents
+**Features**
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+* **FastAPI:** Utilizes FastAPI for building robust and high-performance APIs.
+* **GraphQL Integration:** Demonstrates how to integrate GraphQL with FastAPI.
+* **Sample Schema:** Provides a sample GraphQL schema with example queries and mutations.
+* **Interactive API Documentation:** Utilizes Swagger UI and Redoc to generate interactive API documentation.
 
-## Introduction
+**Requirements**
 
-Provide an overview of your project, explaining its purpose and goals.
+* Python 3.7+
+* pip
 
-## Features
+**Installation**
 
-List the key features of your project.
+1. Clone the repository:
 
-## Installation
+   ```bash
+   git clone https://github.com/sachnaror/GraphQL_FastAPI.git
+   ```
 
-Provide instructions on how to install and set up your project.
+2. Navigate to the project directory:
 
-## Usage
+   ```bash
+   cd GraphQL_FastAPI
+   ```
 
-Explain how to use your project, including any necessary configurations or examples.
+3. Install the required dependencies:
 
-## Contributing
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Specify guidelines for contributing to your project, including how to report issues and submit pull requests.
+**Usage**
 
-## License
+1. Run the FastAPI server:
 
-State the license under which your project is released.
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+2. Access the GraphQL playground in your browser:
+
+   ```bash
+   http://localhost:8000/graphql
+   ```
+
+Use the GraphQL playground to interact with the API by executing queries and mutations.
+
+**API Documentation**
+
+* **Swagger UI:** Access the Swagger UI for interactive API documentation:
+
+   ```bash
+   http://localhost:8000/docs
+   ```
+
+* **Redoc:** Alternatively, access API documentation using Redoc:
+
+   ```bash
+   http://localhost:8000/redoc
+   ```
+
+**Contributing**
+
+Contributions are welcome! Feel free to open issues or submit pull requests to improve this project.
+
+**License**
+
+This project is licensed under the MIT License. See the LICENSE file for details.
